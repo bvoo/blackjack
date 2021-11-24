@@ -1,4 +1,6 @@
-def check_score(player_score, dealer_score, player, dealer):
+from components.bet.bet import player_win, player_draw
+
+def check_score(player_score, dealer_score, player, dealer, bet):
     """
     This function checks the score of the player and dealer.
     """
@@ -10,7 +12,7 @@ def check_score(player_score, dealer_score, player, dealer):
                 print(f'\nReducing Ace\n')
                 card.rank_value = 1
                 player_score -= 10
-                check_score(player_score, dealer_score, player, dealer)
+                check_score(player_score, dealer_score, player, dealer, bet)
         if player_score > 21:
             print("You busted!")
             exit()
@@ -18,15 +20,18 @@ def check_score(player_score, dealer_score, player, dealer):
             return player_score
     elif dealer_score > 21:
         print("Dealer busted!")
+        player_win(bet)
         exit()
     elif player_score > dealer_score:
         print("You Win!")
+        player_win(bet)
         exit()
     elif dealer_score > player_score:
         print("Dealer Wins!")
         exit()
     elif dealer_score == player_score:
         print("It's a draw!")
+        player_draw(bet)
         exit()
     else:
         print("???")

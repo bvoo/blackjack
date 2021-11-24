@@ -24,7 +24,7 @@ def dealer_options(dealer_score):
     else:
         return False
 
-def player_stay(player, dealer, deck, player_score, dealer_score):
+def player_stay(player, dealer, deck, player_score, dealer_score, bet):
     """
     This function allows the player to stay.
     """
@@ -32,6 +32,6 @@ def player_stay(player, dealer, deck, player_score, dealer_score):
         dealer_score = deal_dealer(deck, dealer, dealer_score)
         display_player(player)
         display_dealer(dealer)
-        check_score(player_score, dealer_score, player, dealer)
+        check_score(player_score, dealer_score, player, dealer, bet)
     else:
-        check_score(player_score, dealer_score, player, dealer)
+        check_score(player_score, dealer_score, player, dealer, bet)

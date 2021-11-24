@@ -46,7 +46,7 @@ def start_game():
         if r:
             player_score = deal_player(deck, player, player_score)
         if r == False:
-            player_stay(player, dealer, deck, player_score, dealer_score)
+            player_stay(player, dealer, deck, player_score, dealer_score, bet)
 
         display_player(player)
         display_dealer(dealer)
