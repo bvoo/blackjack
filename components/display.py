@@ -34,9 +34,7 @@ def display_card(player):
 
     s = ""
     for card in player:
-        if card.rank_value == '10':
-            s = s + "\t|  {}            |".format(card.rank_value)
-        elif card.rank_value == '11':
+        if card.rank_value == 10 or card.rank_value == 11:
             s = s + "\t|  {}            |".format(card.rank_value)
         else:
             s = s + "\t|  {}             |".format(card.rank_value)  
@@ -89,9 +87,7 @@ def display_card(player):
 
     s = ""
     for card in player:
-        if card.rank_value == '10' or card.rank_value == '11':
-            s = s + "\t|            {}  |".format(card.rank_value)
-        elif card.rank_value == '11':
+        if card.rank_value == 10 or card.rank_value == 11:
             s = s + "\t|            {}  |".format(card.rank_value)
         else:
             s = s + "\t|            {}   |".format(card.rank_value)

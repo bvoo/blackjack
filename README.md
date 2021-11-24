@@ -1,7 +1,5 @@
 ﻿# Blackjack Midterm Project
 22/11/2021-25/11/2021
-## TODO:
-- fix the weird 10+ value display bug
 ## Rules
 - The game begins with the player placing a bet.
 - The player is dealt two cards.
