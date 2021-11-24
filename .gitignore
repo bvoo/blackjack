@@ -1,3 +1,5 @@
+# Project specific
+components/bet/player.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
