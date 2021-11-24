@@ -1,5 +1,6 @@
 from random import choice
 
+
 def deal_player(deck, player, player_score):
     """
     This function deals a card to the player.

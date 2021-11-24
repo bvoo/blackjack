@@ -13,7 +13,7 @@ class Card:
         return self.rank + " of " + self.suit
 
 
-def Deck():
+def create_deck():
     """
     This function creates a deck of cards.
     """

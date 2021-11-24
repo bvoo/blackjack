@@ -26,13 +26,12 @@ def display_card(player):
     for card in player:
         s = s + "\t ________________"
     print(s)
- 
- 
+
     s = ""
     for card in player:
         s = s + "\t|                |"
     print(s)
- 
+
     s = ""
     for card in player:
         if card.rank_value == '10':
@@ -42,52 +41,52 @@ def display_card(player):
         else:
             s = s + "\t|  {}             |".format(card.rank_value)  
     print(s)
- 
+
     s = ""
     for card in player:
         s = s + "\t|                |"
-    print(s)    
- 
+    print(s)
+
     s = ""
     for card in player:
         s = s + "\t|                |"
-    print(s)    
- 
+    print(s)
+
     s = ""
     for card in player:
         s = s + "\t|                |"
-    print(s)    
- 
+    print(s)
+
     s = ""
     for card in player:
         s = s + "\t|                |"
-    print(s)    
- 
+    print(s)
+
     s = ""
     for card in player:
         s = s + "\t|       {}        |".format(card.suit_value)
-    print(s)    
- 
-    s = ""
-    for card in player:
-        s = s + "\t|                |"
-    print(s)    
- 
+    print(s)
+
     s = ""
     for card in player:
         s = s + "\t|                |"
     print(s)
- 
+
     s = ""
     for card in player:
         s = s + "\t|                |"
     print(s)
- 
+
     s = ""
     for card in player:
         s = s + "\t|                |"
-    print(s)    
- 
+    print(s)
+
+    s = ""
+    for card in player:
+        s = s + "\t|                |"
+    print(s)
+
     s = ""
     for card in player:
         if card.rank_value == '10' or card.rank_value == '11':
@@ -96,11 +95,11 @@ def display_card(player):
             s = s + "\t|            {}  |".format(card.rank_value)
         else:
             s = s + "\t|            {}   |".format(card.rank_value)
-    print(s)    
-         
+    print(s)
+
     s = ""
     for card in player:
         s = s + "\t|________________|"
-    print(s)        
- 
+    print(s)
+
     print()

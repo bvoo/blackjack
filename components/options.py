@@ -1,6 +1,6 @@
-from .display import display_player, display_dealer
-from .deal import *
-from .validate import *
+from display import display_player, display_dealer
+from deal import *
+from validate import *
 
 
 def player_options(deck, player, player_score):

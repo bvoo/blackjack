@@ -2,17 +2,15 @@ from random import shuffle
 from components.display import display_player, display_dealer 
 from components.bet.bet import player_bet
 from components.deal import deal_player, deal_dealer
-from components.options import player_options, dealer_options, player_stay
-from components.validate import check_score
-from components.decks import Deck
+from components.options import player_options, player_stay
+from components.decks import create_deck
 
-# Game Loop
 
 def start_game():
     """
     This function starts the game.
     """
-    deck = Deck()
+    deck = create_deck()
     shuffle(deck)
 
     player = []
@@ -45,7 +43,7 @@ def start_game():
         r = player_options(deck, player, player_score)
         if r:
             player_score = deal_player(deck, player, player_score)
-        if r == False:
+        if r is False:
             player_stay(player, dealer, deck, player_score, dealer_score, bet)
 
         display_player(player)

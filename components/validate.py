@@ -1,5 +1,6 @@
 from components.bet.bet import player_win, player_draw, player_loss
 
+
 def check_score(player_score, dealer_score, player, dealer, bet):
     """
     This function checks the score of the player and dealer.
