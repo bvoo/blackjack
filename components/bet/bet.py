@@ -47,6 +47,7 @@ def player_win(bet):
     money = data["money"]
     money += bet+bet+bet
     modify_json(money, bet)
+    print(f'Won {bet}!')
 
 
 def player_draw(bet):
@@ -57,3 +58,10 @@ def player_draw(bet):
     money = data["money"]
     money += bet
     modify_json(money, bet)
+    print('Money refunded.')
+
+def player_loss(bet):
+    """
+    This function allows the player to lose.
+    """
+    print(f'Lost {bet}!')

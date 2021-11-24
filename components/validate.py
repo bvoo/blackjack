@@ -1,4 +1,4 @@
-from components.bet.bet import player_win, player_draw
+from components.bet.bet import player_win, player_draw, player_loss
 
 def check_score(player_score, dealer_score, player, dealer, bet):
     """
@@ -15,6 +15,7 @@ def check_score(player_score, dealer_score, player, dealer, bet):
                 check_score(player_score, dealer_score, player, dealer, bet)
         if player_score > 21:
             print("You busted!")
+            player_loss(bet)
             exit()
         else:
             return player_score
@@ -28,6 +29,7 @@ def check_score(player_score, dealer_score, player, dealer, bet):
         exit()
     elif dealer_score > player_score:
         print("Dealer Wins!")
+        player_loss(bet)
         exit()
     elif dealer_score == player_score:
         print("It's a draw!")
@@ -35,4 +37,5 @@ def check_score(player_score, dealer_score, player, dealer, bet):
         exit()
     else:
         print("???")
+        player_draw(bet)
         return False

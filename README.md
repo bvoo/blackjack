@@ -2,12 +2,9 @@
 22/11/2021-25/11/2021
 ## TODO:
 ### High priority
-- Graphically display cards
+- Allow player to enter a new game
 ### Medium Priority
 - Handle save files
-- Allow player to enter a new game
-### Low Priority
-- Handle player quitting without saving
 
 ## Rules
 - The game begins with the player placing a bet.
