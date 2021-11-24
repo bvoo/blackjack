@@ -1,11 +1,7 @@
 ﻿# Blackjack Midterm Project
 22/11/2021-25/11/2021
 ## TODO:
-### High priority
-- Allow player to enter a new game
-### Medium Priority
-- Handle save files
-
+- fix the weird 10+ value display bug
 ## Rules
 - The game begins with the player placing a bet.
 - The player is dealt two cards.
