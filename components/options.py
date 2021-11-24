@@ -32,6 +32,6 @@ def player_stay(player, dealer, deck, player_score, dealer_score):
         dealer_score = deal_dealer(deck, dealer, dealer_score)
         display_player(player)
         display_dealer(dealer)
-        check_score(player_score, dealer_score)  # error is here : D
+        check_score(player_score, dealer_score, player, dealer)
     else:
-        check_score(player_score, dealer_score)
+        check_score(player_score, dealer_score, player, dealer)

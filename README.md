@@ -1,12 +1,14 @@
 ﻿# Blackjack Midterm Project
-22/11/2021
+22/11/2021-25/11/2021
 ## TODO:
-- Handle aces properly
+### High priority
 - Handle wagers
+### Medium Priority
 - Handle save files
-- Handle player quitting without saving
-- Graphically display cards
 - Allow player to enter a new game
+### Low Priority
+- Graphically display cards
+- Handle player quitting without saving
 
 ## Rules
 - The game begins with the player placing a bet.

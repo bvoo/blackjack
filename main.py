@@ -1,4 +1,3 @@
-
 from random import shuffle
 from components.display import display_player, display_dealer 
 from components.bet.bet import player_bet
