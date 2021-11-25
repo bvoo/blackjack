@@ -1,6 +1,6 @@
 def display_player(player):
     """
-    This function displays the player's hand.
+    This function displays the player's hand in text.
     """
     print("Your hand: ")
     for card in player:
@@ -11,7 +11,7 @@ def display_player(player):
 
 def display_dealer(dealer):
     """
-    This function displays the dealer's hand.
+    This function displays the dealer's hand in text.
     """
     print("Dealer's hand: ")
     for card in dealer:
@@ -20,8 +20,10 @@ def display_dealer(dealer):
     display_card(dealer)
 
 
-# display graphical playing card
 def display_card(player):
+    """
+    This function displays the player's or dealers's graphically.
+    """
     s = ""
     for card in player:
         s = s + "\t ________________"
