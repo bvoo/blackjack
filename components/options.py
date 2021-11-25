@@ -24,6 +24,7 @@ def dealer_options(dealer_score):
     else:
         return False
 
+
 def player_stay(player, dealer, deck, player_score, dealer_score, bet):
     """
     This function allows the player to stay.
