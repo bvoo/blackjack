@@ -14,7 +14,7 @@ def load_json():
         data = json.load(json_file)
     return data
 
-# modify json to remove bet from money value
+
 def modify_json(money, bet):
     """
     This function modifies the json file.
@@ -22,6 +22,7 @@ def modify_json(money, bet):
     money -= bet
     with open(file_path, 'w') as f:
         f.write('{\n    "money": ' + str(money) + '\n}')
+
         
 def player_bet():
     """
@@ -38,6 +39,7 @@ def player_bet():
         else:
             modify_json(money, bet)
             return bet
+
 
 def player_win(bet):
     """
@@ -56,9 +58,10 @@ def player_draw(bet):
     """
     data = load_json()
     money = data["money"]
-    money += bet
+    money += bet+bet
     modify_json(money, bet)
     print('Money refunded.')
+
 
 def player_loss(bet):
     """

@@ -7,12 +7,16 @@ def player_options(deck, player, player_score):
     """
     This function allows the player to hit or stay.
     """
-    choice = input("Would you like to hit or stay? ")
-    print('\n')
-    if choice == "hit":
-        return True
-    else:
-        return False
+    while True:
+        choice = input("Would you like to hit or stay? ")
+        print('\n')
+        choice = choice.lower()
+        if choice == "hit":
+            return True
+        elif choice == "stay":
+            return False
+        else:
+            print('Invalid!\n')
 
 
 def dealer_options(dealer_score):
