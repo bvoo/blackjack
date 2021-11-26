@@ -1,5 +1,9 @@
 ﻿# Blackjack Midterm Project
 22/11/2021-25/11/2021
+
+## To Do
+- Hide second dealer card.
+
 ## Rules
 - The game begins with the player placing a bet.
 - The player is dealt two cards.
